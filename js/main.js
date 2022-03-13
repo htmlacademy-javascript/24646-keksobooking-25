@@ -142,4 +142,4 @@ const createAd = () => {
 
 
 const tenFakeAds = Array.from({length:AD_AMOUNT}, createAd);
-console.log(tenFakeAds);
+tenFakeAds();
