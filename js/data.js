@@ -23,6 +23,13 @@ const TYPES = [
   'bungalow',
   'hotel'
 ];
+const TYPE_FLAT = {
+  flat: 'Квартира',
+  bungalow: 'Бунгало',
+  house: 'Дом',
+  palace: 'Дворец',
+  hotel: 'Отель'
+};
 const TIMES = [
   '12:00',
   '13:00',
@@ -84,4 +91,4 @@ const createAd = () => {
   };
 };
 
-export {createAd};
+export {createAd, TYPE_FLAT};
