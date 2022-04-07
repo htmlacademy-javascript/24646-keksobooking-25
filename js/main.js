@@ -1,3 +1,6 @@
 import { showCard } from './card.js';
+import {createAd} from './data.js';
 
-showCard();
+const RESULT = createAd();
+showCard(RESULT);
+

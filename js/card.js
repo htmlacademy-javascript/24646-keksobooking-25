@@ -1,15 +1,8 @@
-import {createAd, TYPE_FLAT} from './data.js';
+import {TYPE_FLAT} from './data.js';
 
-const AD_AMOUNT = 10;
+export const cardTemplate = document.querySelector('#card').content.querySelector('.popup');
 
-const tenFakeAds = Array.from({length:AD_AMOUNT}, createAd);
-
-tenFakeAds();
-
-const cardTemplate = document.querySelector('#card').querySelector('.popup');
-
-const imgTemplate = document.querySelector('#card').querySelector('.popup_photo');
-
+const imgTemplate = document.querySelector('#card').content.querySelector('.popup__photo');
 const insertPhotos = (element, array) => {
   element.innerHTML = '';
 

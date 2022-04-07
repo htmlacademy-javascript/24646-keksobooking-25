@@ -55,10 +55,11 @@ const DESCRIPTIONS = [
   'Семейный',
   'Лучший'
 ];
+const PHOTOS_FOLDER = 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking';
 const PHOTOS = [
-  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg',
-  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
-  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'
+  `${PHOTOS_FOLDER}/duonguyen-8LrGtIxxa4w.jpg`,
+  `${PHOTOS_FOLDER}/brandon-hoogenboom-SNxQGWxZQi0.jpg`,
+  `${PHOTOS_FOLDER}/claire-rendall-b6kAwr1i0Iw.jpg`
 ];
 
 const createAd = () => {
@@ -81,7 +82,7 @@ const createAd = () => {
       checkout: getRandomArrayElement(TIMES),
       features: getRandomArray(FEATURES),
       description:getRandomArrayElement(DESCRIPTIONS),
-      photos: getRandomArrayElement(PHOTOS),
+      photos: getRandomArray(PHOTOS),
     },
 
     location: {
