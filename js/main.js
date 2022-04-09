@@ -1,7 +1,6 @@
+import { showCard } from './card.js';
 import {createAd} from './data.js';
 
-const AD_AMOUNT = 10;
+const RESULT = createAd();
+showCard(RESULT);
 
-const tenFakeAds = Array.from({length:AD_AMOUNT}, createAd);
-
-tenFakeAds();
