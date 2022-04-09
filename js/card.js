@@ -41,7 +41,7 @@ const renderCard = (card) => {
 
 const showCard = (ad) => {
   const adCard = document.querySelector('#map-canvas');
-  adCard.insertAdjacentElement('beforebegin', renderCard(ad));
+  adCard.insertAdjacentElement('beforeend', renderCard(ad));
 };
 
 export {showCard};
